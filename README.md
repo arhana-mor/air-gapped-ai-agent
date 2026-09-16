@@ -5,9 +5,9 @@ An ongoing project for building an offline AI agent for engineering and industri
 ## What It Does
 
 - Runs AI models locally through **Ollama** without external AI APIs.
-- -Does not require Internet Connectivity.
-- -Automatically decides whether to run on CPU or GPU based on the available hardware.
-- -No data leaves the local environment.
+- Does not require Internet Connectivity.
+- Automatically decides whether to run on CPU or GPU based on the available hardware.
+- No data leaves the local environment.
 - Routes tasks between language and vision models based on the input.
 - Processes text and images and performs engineering calculations.
 - Uses a plant knowledge graph to connect equipment with pipelines, valves, inspections, and safety documents. Current data is comprised of hardcoded values.
