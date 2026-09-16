@@ -5,6 +5,9 @@ An ongoing project for building an offline AI agent for engineering and industri
 ## What It Does
 
 - Runs AI models locally through **Ollama** without external AI APIs.
+- -Does not require Internet Connectivity.
+- -Automatically decides whether to run on CPU or GPU based on the available hardware.
+- -No data leaves the local environment.
 - Routes tasks between language and vision models based on the input.
 - Processes text and images and performs engineering calculations.
 - Uses a plant knowledge graph to connect equipment with pipelines, valves, inspections, and safety documents. Current data is comprised of hardcoded values.
@@ -20,12 +23,12 @@ An ongoing project for building an offline AI agent for engineering and industri
 - **Ollama** : Local execution of open-weight AI models.
 - **Qwen2.5-Coder:1.5B** : Calculation code generation, error correction, and engineering report generation.
 - **Qwen2.5-VL:3B** : Intended for analysing scanned blueprints, handwritten notes, engineering diagrams, and other images; blueprint-specific logic is still being implemented.
-- **Streamlit** — User interface and AI workbench.
-- **OpenAI Python SDK** — Sends requests to Ollama through its OpenAI-compatible API.
-- **NetworkX** — Plant knowledge graph construction and traversal.
-- **PyPDF** — PDF text extraction.
-- **ezdxf** — DXF/CAD parsing.
-- **python-docx** — Word report generation.
+- **Streamlit** : User interface and AI workbench.
+- **OpenAI Python SDK** : Sends requests to Ollama through its OpenAI-compatible API.
+- **NetworkX** : Plant knowledge graph construction and traversal.
+- **PyPDF** : PDF text extraction.
+- **ezdxf** : DXF/CAD parsing.
+- **python-docx** : Word report generation.
 
 ## System Architecture
 
